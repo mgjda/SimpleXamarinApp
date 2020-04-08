@@ -1,0 +1,63 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <TextView
+        android:text="Enter a Password"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView1" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/EnterPasswordText"
+        android:inputType="none"/>
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LowerCaseCheckbox"
+        android:text="Lower Case Letters"
+        android:checked="true" />
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/UpperCaseCheckbox"
+        android:text="Upper Case Letters"
+        android:checked="true" />
+    <CheckBox
+        android:text="Digits"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/DigitsCheckbox"
+        android:checked="true" />
+    <CheckBox
+        android:text="Special Signs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/SpecialSignsCheckbox"
+        android:checked="true" />
+    <Button
+        android:text="Generate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/GenerateButton">
+    </Button>
+    <TextView
+        android:text="GeneratedPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/GeneratedPasswordTextview"
+        android:layout_marginBottom="0.0dp" />
+    <Button
+        android:text="Copy to clipboard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CopyButton" />
+</LinearLayout>
